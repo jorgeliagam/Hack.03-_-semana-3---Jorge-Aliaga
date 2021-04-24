@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+ <title>Document</title>
 </head>
 <h1>Diseño de formulario - reto 3 </h1>
 
-
 <body>
     <form action=""> 
-    <input type="text" placeholder="Nombres">
-    <input type="text" placeholder=" Apellidos">
-    <label for=" Edad "> Edad </label> <input type="number" min="18" max="80">
-    <label for="DNI "> </label> <input type="text" placeholder=" ingresa tu dni" pattern="[a-z]{1,8}>
-    <label for="Sexo"></label>
-    <label> M <input type="radio" name="sex" value="Masculino"> </label>
-    <label> F <input type="radio" name="sex" value="Femenino"> </label>
-    <label for=" Email "> </label><input type="email" placeholder="email">
-    <label  Contraseña </label> <input type="text" placeholder="ingresa tu contraseña" minlength="1"" maxlength="8" > 
-    <button> Ingresar</button>
 
-</form>
+    <label for="Nombres">Nombres</label>    
+   
+
+    <input type="text" placeholder="Nombres" pattern="[a-zA-Z]+"> 
+    <input type="text" placeholder=" Apellidos" pattern="[a-zA-Z]+">
+    <label for=" Edad ">Edad</label> <input type="number" min="18" max="80" required>
+    <label for="DNI "> </label> <input  type="text" placeholder=" ingresa tu dni" part="{1,9}" minlength="8" required>
+    
+    <label for="Sex">Sexo</label>
+    <label>M<input type="radio" name="sex" value="Masculino"> </label>
+    <label>F<input type="radio" name="sex" value="Femenino"> </label>
+    <label for=" Email "> </label><input type="email" placeholder="email">
+    <label  Contraseña</label> <input type="text" placeholder="ingresa tu contraseña" minlength="1"" maxlength="8" required> 
+    
+        <input type="submit" value="Enviar"
+
+"></form>
 </body>
 </html>
